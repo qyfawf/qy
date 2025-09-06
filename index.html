@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缘中缘婚介中心 - 命中有缘，圆满相遇</title>
+    <meta name="description" content="专业的婚介服务机构，为单身人士提供精准匹配、专业顾问、隐私保护的一站式婚恋服务。">
+    <meta name="keywords" content="婚介,婚恋,相亲,交友,婚恋服务,脱单,缘分">
+    <meta name="author" content="缘中缘婚介中心">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuanzhongyuan.com/">
+    <meta property="og:title" content="缘中缘婚介中心 - 命中有缘，圆满相遇">
+    <meta property="og:description" content="专业的婚介服务机构，为单身人士提供精准匹配、专业顾问、隐私保护的一站式婚恋服务。">
+    <meta property="og:image" content="https://yuanzhongyuan.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yuanzhongyuan.com/">
+    <meta property="twitter:title" content="缘中缘婚介中心 - 命中有缘，圆满相遇">
+    <meta property="twitter:description" content="专业的婚介服务机构，为单身人士提供精准匹配、专业顾问、隐私保护的一站式婚恋服务。">
+    <meta property="twitter:image" content="https://yuanzhongyuan.com/og-image.jpg">
+    
+    <!-- 字体加载优化 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 备用字体 -->
+    <style>
+        @font-face {
+            font-family: 'PingFang SC';
+            src: local('PingFang SC'), local('Microsoft YaHei');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-rings">💞</div>
+                <span>缘中缘</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#members">会员展示</a></li>
+                <li><a href="#services">服务介绍</a></li>
+                <li><a href="#success">成功案例</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页 Banner -->
+    <section id="home" class="hero-banner">
+        <div class="banner-overlay"></div>
+        <div class="ribbon-container">
+            <svg class="ribbon-svg" viewBox="0 0 1200 600">
+                <defs>
+                    <linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:0.8" />
+                        <stop offset="50%" style="stop-color:#DDA0DD;stop-opacity:0.6" />
+                        <stop offset="100%" style="stop-color:#F0E68C;stop-opacity:0.8" />
+                    </linearGradient>
+                </defs>
+                <path class="ribbon-path" d="M0,300 Q300,100 600,300 T1200,300" stroke="url(#ribbonGradient)" stroke-width="3" fill="none"/>
+                <path class="ribbon-path" d="M0,350 Q300,150 600,350 T1200,350" stroke="url(#ribbonGradient)" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">缘分在此，为你牵线</h1>
+            <p class="hero-subtitle">命中有缘，圆满相遇 - 缘中缘婚介中心</p>
+            <a href="quiz.html" class="cta-button ribbon-btn">
+                <span>开始寻缘</span>
+                <div class="ribbon-decoration"></div>
+            </a>
+        </div>
+        <div class="floating-lights">
+            <div class="light-orb"></div>
+            <div class="light-orb"></div>
+            <div class="light-orb"></div>
+        </div>
+    </section>
+
+    <!-- 会员照片展示区 -->
+    <section id="members" class="members-section">
+        <div class="section-header">
+            <h2>优秀会员</h2>
+            <div class="subtitle-line"></div>
+            <p>遇见命中注定的那个人</p>
+        </div>
+        
+        <div class="members-container">
+            <div class="members-scroll" id="membersScroll">
+                <!-- 会员卡片将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务介绍区 -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2>专业服务</h2>
+            <div class="subtitle-line"></div>
+            <p>用心为您搭建缘分桥梁</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💝</div>
+                <h3>精准匹配</h3>
+                <p>基于专业婚恋心理学的智能匹配系统</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <h3>专业顾问</h3>
+                <p>经验丰富的婚恋顾问一对一指导</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌟</div>
+                <h3>隐私保护</h3>
+                <p>严格的隐私保护措施，信息安全可靠</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例区 -->
+    <section id="success" class="success-section">
+        <div class="section-header">
+            <h2>成功案例</h2>
+            <div class="subtitle-line"></div>
+            <p>见证美好的缘分故事</p>
+        </div>
+        
+        <div class="success-stories" id="successStories">
+            <!-- 成功案例将通过JavaScript动态生成 -->
+        </div>
+    </section>
+
+    <!-- 咨询入口 -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>开启您的缘分之旅</h2>
+            <p>专业婚恋顾问为您服务</p>
+            <a href="quiz.html" class="cta-button ribbon-btn large">
+                <span>立即咨询</span>
+                <div class="ribbon-decoration"></div>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
