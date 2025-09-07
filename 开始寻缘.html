@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缘分测试 - 缘中缘婚介中心</title>
+    <meta name="description" content="3分钟完成专业婚恋测试，找到与你同频的TA">
+    <link rel="stylesheet" href="quiz-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="quiz-background">
+        <div class="background-ribbons">
+            <svg class="ribbon-bg" viewBox="0 0 1200 800">
+                <defs>
+                    <linearGradient id="bgRibbonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:0.05" />
+                        <stop offset="100%" style="stop-color:#F0E68C;stop-opacity:0.05" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,200 Q300,100 600,200 T1200,200" stroke="url(#bgRibbonGradient)" stroke-width="2" fill="none"/>
+                <path d="M0,400 Q300,300 600,400 T1200,400" stroke="url(#bgRibbonGradient)" stroke-width="1.5" fill="none"/>
+                <path d="M0,600 Q300,500 600,600 T1200,600" stroke="url(#bgRibbonGradient)" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+        <div class="corner-decoration top-left">缘</div>
+        <div class="corner-decoration bottom-right">缘</div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-rings">💞</div>
+                <span>缘中缘</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 问卷主体 -->
+    <div class="quiz-container">
+        <!-- 顶部引导区 -->
+        <div class="quiz-header">
+            <h1 class="quiz-title">缘分测试</h1>
+            <p class="quiz-subtitle">3分钟完成测试，找到与你同频的TA</p>
+            
+            <!-- 丝带缠绕进度条 -->
+            <div class="progress-container">
+                <div class="progress-ribbon">
+                    <svg class="progress-svg" viewBox="0 0 400 40">
+                        <defs>
+                            <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F7E7CE;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path class="progress-path" d="M20,20 Q200,10 380,20" stroke="url(#progressGradient)" stroke-width="4" fill="none"/>
+                        <path class="progress-background" d="M20,20 Q200,10 380,20" stroke="#FFE4E1" stroke-width="4" fill="none"/>
+                    </svg>
+                </div>
+                <div class="progress-text">
+                    <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 问题区域 -->
+        <div class="question-container">
+            <div class="question-card" id="questionCard">
+                <!-- 问题内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+
+        <!-- 底部按钮 -->
+        <div class="quiz-navigation">
+            <button class="nav-btn prev-btn" id="prevBtn" style="display: none;">
+                <span>上一题</span>
+                <div class="ribbon-decoration"></div>
+            </button>
+            <button class="nav-btn next-btn" id="nextBtn">
+                <span>下一题</span>
+                <div class="ribbon-decoration"></div>
+            </button>
+            <button class="nav-btn submit-btn" id="submitBtn" style="display: none;">
+                <span>解锁我的缘分</span>
+                <div class="ribbon-decoration"></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- 匹配中动画 -->
+    <div class="matching-overlay" id="matchingOverlay">
+        <div class="matching-content">
+            <div class="double-rings-loader">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="center-icon">💞</div>
+            </div>
+            <h3>正在为您匹配缘分...</h3>
+            <p>请稍候，我们正在寻找最适合您的TA</p>
+        </div>
+    </div>
+
+    <!-- 测试结果页面 -->
+    <div class="result-container" id="resultContainer" style="display: none;">
+        <div class="result-content">
+            <div class="result-header">
+                <h2>测试完成！</h2>
+                <div class="result-icon">💕</div>
+            </div>
+            <div class="result-details">
+                <p>您的缘分类型：<span class="personality-type">温柔浪漫型</span></p>
+                <p>最佳匹配：<span class="match-type">稳重成熟型</span></p>
+                <div class="match-percentage">
+                    <div class="percentage-circle">
+                        <span class="percentage-text">85%</span>
+                    </div>
+                    <p>匹配度</p>
+                </div>
+            </div>
+            <button class="nav-btn result-btn">
+                <span>查看推荐会员</span>
+                <div class="ribbon-decoration"></div>
+            </button>
+        </div>
+    </div>
+
+    <script src="quiz-script.js"></script>
+</body>
+</html>
